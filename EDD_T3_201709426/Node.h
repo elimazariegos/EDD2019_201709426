@@ -14,7 +14,8 @@ using namespace std;
 class Node {
 public:
     
-    Node* sig = 0;
+    Node* sig = 0;//apuntador para los dias
+    //apuntadores para las actividades por cada dia
     Node* arriba = 0;
     Node* abajo = 0;
     
