@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Debug=_edd_tarea3_201709426
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/_edd_tarea3_201709426
+CND_ARTIFACT_NAME_Debug=edd_t3_201709426
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_1-Windows/edd_t3_201709426
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Debug=[edd]tarea3201709426.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/[edd]tarea3201709426.tar
+CND_PACKAGE_NAME_Debug=eddt3201709426.zip
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_1-Windows/package/eddt3201709426.zip
 # Release configuration
 CND_PLATFORM_Release=Cygwin_1-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_1-Windows
-CND_ARTIFACT_NAME_Release=_edd_tarea3_201709426
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/_edd_tarea3_201709426
+CND_ARTIFACT_NAME_Release=edd_t3_201709426
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_1-Windows/edd_t3_201709426
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_1-Windows/package
-CND_PACKAGE_NAME_Release=[edd]tarea3201709426.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/[edd]tarea3201709426.tar
+CND_PACKAGE_NAME_Release=eddt3201709426.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_1-Windows/package/eddt3201709426.tar
 #
 # include compiler specific variables
 #

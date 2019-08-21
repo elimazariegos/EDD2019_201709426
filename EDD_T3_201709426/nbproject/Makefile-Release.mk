@@ -58,11 +58,11 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/_edd_tarea3_201709426.exe
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/edd_t3_201709426.exe
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/_edd_tarea3_201709426.exe: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/edd_t3_201709426.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/_edd_tarea3_201709426 ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/edd_t3_201709426 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/Activity_List.o: Activity_List.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -85,7 +85,7 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/_edd_tarea3_201709426.exe
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/edd_t3_201709426.exe
 
 # Subprojects
 .clean-subprojects:
