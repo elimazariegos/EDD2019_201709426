@@ -15,7 +15,6 @@
 
 using namespace std;
 
-
 void Activity_List::insert(string day, string activity) {
     //aqui codificas
     Node* node_day = exist_day(day);
@@ -27,26 +26,30 @@ void Activity_List::insert(string day, string activity) {
         node_day = insert_day(day);
     }
     Node* aux = node_day;
-    while (aux != 0) {
+
+    while (aux->abajo != 0) {
         aux = aux->abajo;
     }
-    niu->arriba = aux;
     aux->abajo = niu;
-    niu->abajo = 0;
+    niu->arriba = aux;
 
 }
 
-Node* Activity_List::insert_day(string day) {
-    Node* aux = head;
-    
-    while (aux->sig != 0) {
-        aux = aux->sig;
-    }
+Node* Activity_List::insert_day(string day_) {
     Node* niu = new Node();
+    niu->day = day_;
     niu->sig = niu->abajo = niu->arriba = 0;
-    niu->day = day;
-    aux = niu;
-
+    if (is_empty()) {
+        head = niu;
+        return head;
+    } else {
+        Node* aux = head;
+        while (aux->sig != 0) {
+            aux = aux->sig;
+        }
+        aux->sig = niu;
+        return aux->sig;
+    }
 }
 
 Node* Activity_List::exist_day(string day) {
@@ -55,7 +58,7 @@ Node* Activity_List::exist_day(string day) {
     } else {
         Node* aux = head;
         while (aux != 0) {
-            if (aux->sig->day == day) {
+            if (aux->day == day) {
                 return aux;
             }
             aux = aux->sig;
@@ -73,8 +76,11 @@ void Activity_List::print() {
     } else {
         Node* aux_day = head;
         while (aux_day != 0) {
+            cout << "---------------------------" << endl;
+            cout << "---------------------------" << endl;
             cout << aux_day->day << endl;
-            Node* aux_act = aux_day;
+            cout << "---------------------------" << endl;
+            Node* aux_act = aux_day->abajo;
             while (aux_act != 0) {
                 cout << aux_act->activity << endl;
                 aux_act = aux_act->abajo;

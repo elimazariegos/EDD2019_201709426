@@ -17,19 +17,26 @@
 using namespace std;
 
 Activity_List list;
+
 /*
  * 
  */
-int main(int argc, char** argv) {               
-    cout << "ingrese el dia" << endl;
-    string d;
-    cin>>d;
-    cout << "ingrese la actividad" << endl;
-    string a;
-    cin>>a;
-    
-    list.insert(d, a);
-    list.print();
+int main(int argc, char** argv) {
+    while (true) {
+        cout <<"-+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+-" <<endl;
+        cout << "ingrese el dia" << endl;
+        string d;
+        cin>>d;
+        cout << "ingrese la actividad" << endl;
+        string a;
+        cin>>a;
+        
+        cout <<"-+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+_+-" <<endl;
+        list.insert(d, a);
+        list.print();
+    }
+
+
     return 0;
 }
 

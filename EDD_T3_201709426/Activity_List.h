@@ -16,9 +16,9 @@ using namespace std;
 class Activity_List {
 public:
     Node* head;
-    void insert(string day, string activity);
-    Node* insert_day(string day);
-    Node* exist_day(string day);
+    void insert(string day_, string activity_);
+    Node* insert_day(string day_);
+    Node* exist_day(string day_);
     void print();
     bool is_empty(); 
 private:
